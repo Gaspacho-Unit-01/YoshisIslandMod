@@ -1,0 +1,6 @@
+author = PiersRedfield
+version = 1.0.9.2
+
+displayName = Yoshi's Island Mod
+homepage = https://discord.gg/2a5fKKM
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*

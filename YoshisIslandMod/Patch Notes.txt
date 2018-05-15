@@ -1,0 +1,178 @@
+Compiling Issues resolved- 1
+
+	- ThunderFang.cs (Line 7, character 15) had the wrong class name, 
+	  the class was corrected to "ThunderFang".
+
+
+
+Name Changes - 1
+
+	- ThunderFang.cs possessed the wrong display name; was changed to "Thunder Fang"
+
+
+NPC changes - 
+
+- Added SpookyGuy
+	- spawns in dungeon
+	- has expert & normal mode stats
+
+- Added CrimsonToadie
+
+- Added CorruptToadie
+
+- Added Bumpity (WIP)
+	- Turns out his sprite sheet is incomplete gonna need to find another source
+
+GoldenFlopsyFish, FlopsyFish, CorruptedFlopsyFish and GreenFlopsyFish:
+
+	All:
+
+	- Changed "animationType" to "NPCID.Shark" 
+	  (was "NPCID.Goldfish" which was the root of the problem due to lack of frames)
+
+	- Changed "npc.width" and "npc.height" to "30"
+
+	- Added the following Code in "SetDefaults" to make them less aggressive
+	  in normal mode but more aggressive in expert mode.
+
+		if (Main.expertMode)
+            		{
+                		aiType = NPCID.Piranha;
+            		}
+
+            		else
+            		{
+                		aiType = NPCID.Goldfish; 
+            		}
+
+	- Minor code format changes
+
+	- Rearranged and re-formatted the spritesheets
+
+	GoldenFlopsyFish:
+
+	- Changed "npc.damage" to "15" (was "0")
+
+GoldenPiscatoryPete & PiscatoryPete:
+
+	ALL:
+
+	- Changed "npc.width" and "npc.height" to "26"
+
+	- Added the following Code in "SetDefaults" to make them less aggressive
+	  in normal mode but more aggressive in expert mode.
+
+			if (Main.expertMode)
+            			{
+                			aiType = NPCID.Piranha;
+            			}
+
+            			else
+            			{
+                			aiType = NPCID.Goldfish; 
+            			}
+
+	- Changed "animationType" to "NPCID.Goldfish" (was NPCID.Shark)
+
+	- Wiped that stupid grin off of GoldenPiscatoryPete's face, May he never know true 
+	  happiness again.
+	
+	- Removed hovering, re-formatted sprite sheets
+
+PinkPreyingMantas, BluePreyingMantas & PreyingMantas:
+
+	ALL:
+
+	- Completely reworked sprite sheets
+
+	- Increased "Main.npcFrameCount[npc.type]" to "7"
+
+	- Removed hovering
+
+Bandit, RedBandit, DeadlyBandit:
+
+	ALL:
+
+	- Removed Hovering, reworked sprite sheets
+
+	- Set "npc.width" to "30"
+
+	- Set "npc.height" to "50"
+
+	- Deactivated "npc.scale"
+
+	Bandit:
+
+	- Removed a blemish on the spritesheet just above the right foot
+
+	RedBandit:
+
+	- Increased "npc.defense" to "5" (was 0)
+
+	DeadlyBandit:
+	
+	- Changed "Main.npcFrameCount[npc.type]" to "15" (was 20)
+
+	- Changed "animationType" to "NPCID.PossessedArmor" (was NPCID.Fritz)
+
+	- Decreased "npc.damage" to "100" (was 120)
+
+	- Decreased "npc.defense" to "5" (was 10)
+
+	- Set spritesheet to the appropriate size
+
+Goonie
+
+	- Deactivated "npc.scale"
+
+	- set "npc.height" to "60"
+
+	- set "npc.width" to "20"
+
+FlightlessGoonie
+
+	- Deactivated "npc.scale"
+
+	- Resized spritesheet
+
+	- Increased "npc.lifeMax" to "40" (was 5)
+
+ShyGuys, FlyGuys and FatGuys
+
+	- Removed BloodyGuy (Replaced by Spooky Guy)
+
+	- Removed BloodyFlyGuy (Replaced by Toadies)
+
+	- Removed IceGuy (Replaced by Bumpity)
+
+	- Removed IceFlyGuy (Replaced by Bumpity)
+
+
+	ALL FlyGuys:
+
+	- Changed "npc.width" to "25"
+
+	- Changed "npc.height" to "40"
+
+
+	ALL FatGuys:
+
+	- Changed "npc.width" to "45"
+
+	- Changed "npc.height" to "60"
+
+
+	ALL ShyGuys:
+
+	- Changed "npc.width" to "25"
+
+	- Changed "npc.height" to "30"
+
+
+	
+
+
+
+
+
+
