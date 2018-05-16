@@ -2,7 +2,7 @@
 The official GitHub for the Yoshi's Island Terraria Mod
 
 
-Step By Guide to using GitHub:\n
+Step By Guide to using GitHub:
 
 Here's the dealio, GitHub is a tadbit complicated so here is the rundown:
 
